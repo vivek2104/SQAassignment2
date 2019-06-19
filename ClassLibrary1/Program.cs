@@ -20,7 +20,7 @@ namespace ClassLibrary1
             int side1, side2, side3;
             int input;
 
-            do
+            while(true)
             {
                 Console.Write("-------------------------\n");
                 Console.Write(" Find type of Triangle\n");
@@ -35,34 +35,43 @@ namespace ClassLibrary1
                 }
                     Console.Write("------------------------\n");
                 //gets the input of side 1 of a triangle
-                do
+                if (input == 1)
                 {
-                    Console.Write("Enter Side 1 of a triangle\n");
-                    side1 = Convert.ToInt32(Console.ReadLine());
-                  
-                    // while (!int.TryParse(Console.ReadLine(), out side1)) ;
-                } while (side1 <= 0);
+                    do
+                    {
+                        Console.Write("Enter Side 1 of a triangle\n");
+                        side1 = Convert.ToInt32(Console.ReadLine());
+
+                        // while (!int.TryParse(Console.ReadLine(), out side1)) ;
+                    } while (side1 <= 0);
 
 
-                //gets the input of side 2 of a triangle
-                do
+                    //gets the input of side 2 of a triangle
+                    do
+                    {
+                        Console.Write("Enter Side 2 of a triangle\n");
+                        side2 = Convert.ToInt32(Console.ReadLine());
+
+
+                    } while (side2 <= 0);
+
+                    //gets the input of side 3 of a triangle
+                    do
+                    {
+                        Console.Write("Enter Side 3 of a triangle\n");
+                        side3 = Convert.ToInt32(Console.ReadLine());
+                    } while (side3 <= 0);
+
+                    Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
+                }else if (input == 2)
                 {
-                    Console.Write("Enter Side 2 of a triangle\n");
-                    side2 = Convert.ToInt32(Console.ReadLine());
-                    
-                    
-                } while (side2 <= 0);
-
-                //gets the input of side 3 of a triangle
-                do
+                    Environment.Exit(0);
+                }
+                else
                 {
-                    Console.Write("Enter Side 3 of a triangle\n");
-                    side3 = Convert.ToInt32(Console.ReadLine());
-                } while (side3 <= 0);
-
-                Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
-
-            } while ( input!= 2 );
+                    Console.WriteLine("input is not valid");
+                }
+            }
         }
         
     }
