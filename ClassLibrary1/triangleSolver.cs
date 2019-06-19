@@ -18,18 +18,18 @@ namespace ClassLibrary1
             {
                 if (side1 == side2 && side2 == side3)
                 {
-                    Console.Write("This is a equilateral triangle!!!");
-                    return " ";
+                    //Console.WriteLine("This is a equilateral triangle!!!");
+                    return " This is a equilateral triangle!!!";
                 }
                 else if (side1 == side2 || side2 == side3 || side3 == side1)
                 {
-                    Console.Write("This is a isosceles triangle");
-                    return " ";
+                    //Console.WriteLine("This is a isosceles triangle");
+                   return "This is a isosceles triangle!!!" ;
                 }
                 else
                 {
-                    Console.Write("This is a Scalene triangle");
-                    return " ";
+                    //Console.WriteLine("This is a Scalene triangle");
+                    return "This is a Scalene triangle!!!";
                 } 
             
             }
