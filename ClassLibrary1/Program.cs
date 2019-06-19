@@ -8,7 +8,7 @@ namespace ClassLibrary1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Program ts = new Program();
             ts.Go();
@@ -22,56 +22,65 @@ namespace ClassLibrary1
 
             while(true)
             {
-                Console.Write("-------------------------\n");
-                Console.Write(" Find type of Triangle\n");
-                Console.Write("-------------------------\n");
-                Console.WriteLine("\n1.Enter the Triangle dimensions\n");
-                Console.WriteLine("\n2.Exit \n");
-              
-                if ((!int.TryParse(Console.ReadLine(), out input)) || input <= 0 || input > 2)
+                try
                 {
-                    Console.WriteLine("Please Enter the Correct option: ");
-                    continue;
-                }
+                    Console.Write("-------------------------\n");
+                    Console.Write(" Find type of Triangle\n");
+                    Console.Write("-------------------------\n");
+                    Console.WriteLine("\n1.Enter the Triangle dimensions\n");
+                    Console.WriteLine("\n2.Exit \n");
+
+                    if ((!int.TryParse(Console.ReadLine(), out input)) || input <= 0 || input > 2)
+                    {
+                        Console.WriteLine("Please Enter the Correct option: ");
+                        continue;
+                    }
                     Console.Write("------------------------\n");
-                //gets the input of side 1 of a triangle
-                if (input == 1)
-                {
-                    do
+                    //gets the input of side 1 of a triangle
+                    if (input == 1)
                     {
-                        Console.Write("Enter Side 1 of a triangle\n");
-                        side1 = Convert.ToInt32(Console.ReadLine());
+                        do
+                        {
+                            Console.Write("Enter Side 1 of a triangle\n");
+                            side1 = Convert.ToInt32(Console.ReadLine());
 
-                        // while (!int.TryParse(Console.ReadLine(), out side1)) ;
-                    } while (side1 <= 0);
+                            // while (!int.TryParse(Console.ReadLine(), out side1)) ;
+                        } while (side1 <= 0);
 
 
-                    //gets the input of side 2 of a triangle
-                    do
+                        //gets the input of side 2 of a triangle
+                        do
+                        {
+                            Console.Write("Enter Side 2 of a triangle\n");
+                            side2 = Convert.ToInt32(Console.ReadLine());
+
+
+                        } while (side2 <= 0);
+
+                        //gets the input of side 3 of a triangle
+                        do
+                        {
+                            Console.Write("Enter Side 3 of a triangle\n");
+                            side3 = Convert.ToInt32(Console.ReadLine());
+                        } while (side3 <= 0);
+
+                        Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
+                    }
+                    else if (input == 2)
                     {
-                        Console.Write("Enter Side 2 of a triangle\n");
-                        side2 = Convert.ToInt32(Console.ReadLine());
-
-
-                    } while (side2 <= 0);
-
-                    //gets the input of side 3 of a triangle
-                    do
+                        Environment.Exit(0);
+                    }
+                    else
                     {
-                        Console.Write("Enter Side 3 of a triangle\n");
-                        side3 = Convert.ToInt32(Console.ReadLine());
-                    } while (side3 <= 0);
-
-                    Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
-                }else if (input == 2)
-                {
-                    Environment.Exit(0);
+                        Console.WriteLine("input is not valid");
+                    }
                 }
-                else
+                catch (Exception)
                 {
-                    Console.WriteLine("input is not valid");
+                    Console.WriteLine("Enter numbers only");
                 }
             }
+
         }
         
     }

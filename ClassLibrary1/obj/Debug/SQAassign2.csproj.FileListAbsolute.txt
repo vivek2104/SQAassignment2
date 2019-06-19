@@ -4,3 +4,6 @@ D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\SQAassign2.cspro
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.exe
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.exe
+D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.dll
+D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\nunit.framework.xml
+D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\SQAassign2.csproj.CopyComplete
