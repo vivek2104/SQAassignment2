@@ -10,8 +10,8 @@ namespace ClassLibrary1
     {
         static void Main(string[] args)
         {
-            Program tf = new Program();
-            tf.Go();
+            Program ts = new Program();
+            ts.Go();
             Console.ReadKey();
 
         }
@@ -39,6 +39,8 @@ namespace ClassLibrary1
                 {
                     Console.Write("Enter Side 1 of a triangle\n");
                     side1 = Convert.ToInt32(Console.ReadLine());
+                  
+                    // while (!int.TryParse(Console.ReadLine(), out side1)) ;
                 } while (side1 <= 0);
 
 
@@ -47,6 +49,8 @@ namespace ClassLibrary1
                 {
                     Console.Write("Enter Side 2 of a triangle\n");
                     side2 = Convert.ToInt32(Console.ReadLine());
+                    
+                    
                 } while (side2 <= 0);
 
                 //gets the input of side 3 of a triangle
