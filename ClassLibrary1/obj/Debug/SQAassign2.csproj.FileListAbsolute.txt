@@ -1,6 +1,6 @@
-D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\SQAassign2.csprojAssemblyReference.cache
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\SQAassign2.csproj.CoreCompileInputs.cache
-D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.exe
+D:\sem 2\Software Quality\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.exe
