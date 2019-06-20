@@ -11,6 +11,8 @@ namespace triangleTestClass
     [TestFixture]
     public class triangelTestCases
     {
+
+        //test of equilateral triangle
         [Test]
         public void checkEuilateralTriangle()
         {
@@ -22,7 +24,7 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, " This is a equilateral triangle!!!");
         }
-
+        //test case when triangle conditions area not met
         [Test]
         public void Sides2and8and6forNotPossible()
         {
@@ -35,6 +37,7 @@ namespace triangleTestClass
             Assert.AreEqual(check, "Triangle cannot be formed");
             
         }
+        //test case when one of input size is negative
         [Test]
         public void Sides2and8andNegative6forNotPossible()
         {
@@ -47,7 +50,7 @@ namespace triangleTestClass
             Assert.AreEqual(check, "Triangle cannot be formed");
 
         }
-
+        //test case when any one side size is zero
         [Test]
         public void anySidesare0()
         {
@@ -59,7 +62,7 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, "Triangle cannot be formed");
         }
-
+        //test case to check Isosceles Triangle
         [Test]
         public void checkIsoscelesTriangle()
         {
@@ -71,7 +74,7 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, "This is a isosceles triangle!!!");
         }
-
+        //test case t0 check Scalene triangle
         [Test]
         public void checkScaleneTriangle()
         {
@@ -83,6 +86,7 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, "This is a Scalene triangle!!!");
         }
+        //test case to check when two sides are negative
         [Test]
         public void checkInvalidInput()
         {
@@ -94,7 +98,7 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, "Triangle cannot be formed");
         }
-
+        //test case when size in decimals
         [Test]
         public void sizeInDecimals()
         {

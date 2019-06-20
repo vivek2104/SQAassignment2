@@ -19,9 +19,10 @@ namespace ClassLibrary1
         {
             double side1, side2, side3;
             int input;
-
+            //helps keep program running
             while(true)
             {
+                //program initialization starts here
                 try
                 {
                     Console.Write("-------------------------\n");
@@ -30,6 +31,7 @@ namespace ClassLibrary1
                     Console.WriteLine("\n1.Enter the Triangle dimensions\n");
                     Console.WriteLine("\n2.Exit \n");
 
+                    //lets user decide to run program or not and requests to choose correct option
                     if ((!int.TryParse(Console.ReadLine(), out input)) || input <= 0 || input > 2)
                     {
                         Console.WriteLine("Please Enter the Correct option: ");
@@ -66,15 +68,18 @@ namespace ClassLibrary1
 
                         Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
                     }
+                    //condition to exit the program
                     else if (input == 2)
                     {
                         Environment.Exit(0);
                     }
+                    //condition if invalid input is not valid
                     else
                     {
                         Console.WriteLine("input is not valid");
                     }
                 }
+                
                 catch (Exception)
                 {
                     Console.WriteLine("Enter numbers only");
