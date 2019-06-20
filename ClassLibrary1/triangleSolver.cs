@@ -8,11 +8,11 @@ namespace ClassLibrary1
 {
     public static class triangleSolver
     {
-        public static string Analyze(int side1, int side2, int side3)
+        public static string Analyze(double side1, double side2, double side3)
         {
-            int sSide1 = side1 + side2;
-            int sSide2 = side2 + side3;
-            int sSide3 = side3 + side1;
+            double sSide1 = side1 + side2;
+            double sSide2 = side2 + side3;
+            double sSide3 = side3 + side1;
 
             if (sSide1 > side3 && sSide2 > side1 && sSide3 > side2)
             {

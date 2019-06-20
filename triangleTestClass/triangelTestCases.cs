@@ -83,5 +83,28 @@ namespace triangleTestClass
             //Assert
             Assert.AreEqual(check, "This is a Scalene triangle!!!");
         }
+        [Test]
+        public void checkInvalidInput()
+        {
+            //Arrange
+            int side1 =- 3, side2 = 4, side3 = -4 ;
+
+            //Act
+            String check = triangleSolver.Analyze(side1, side2, side3);
+            //Assert
+            Assert.AreEqual(check, "Triangle cannot be formed");
+        }
+
+        [Test]
+        public void sizeInDecimals()
+        {
+            //Arrange
+            double side1 = 3.5, side2 = 4, side3 = 4;
+
+            //Act
+            String check = triangleSolver.Analyze(side1, side2, side3);
+            //Assert
+            Assert.AreEqual(check, "This is a isosceles triangle!!!");
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace ClassLibrary1
         }
         public void Go()
         {
-            int side1, side2, side3;
+            double side1, side2, side3;
             int input;
 
             while(true)
@@ -42,7 +42,7 @@ namespace ClassLibrary1
                         do
                         {
                             Console.Write("Enter Side 1 of a triangle\n");
-                            side1 = Convert.ToInt32(Console.ReadLine());
+                            side1 = Convert.ToDouble(Console.ReadLine());
 
                             // while (!int.TryParse(Console.ReadLine(), out side1)) ;
                         } while (side1 <= 0);
@@ -52,7 +52,7 @@ namespace ClassLibrary1
                         do
                         {
                             Console.Write("Enter Side 2 of a triangle\n");
-                            side2 = Convert.ToInt32(Console.ReadLine());
+                            side2 = Convert.ToDouble(Console.ReadLine());
 
 
                         } while (side2 <= 0);
@@ -61,7 +61,7 @@ namespace ClassLibrary1
                         do
                         {
                             Console.Write("Enter Side 3 of a triangle\n");
-                            side3 = Convert.ToInt32(Console.ReadLine());
+                            side3 = Convert.ToDouble(Console.ReadLine());
                         } while (side3 <= 0);
 
                         Console.WriteLine(triangleSolver.Analyze(side1, side2, side3));
